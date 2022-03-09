@@ -41,7 +41,8 @@ li,
 button,
 label,
 input,
-p {
+p,
+a {
   font-size: var(--text);
 }
 
@@ -51,6 +52,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .flex {
@@ -58,4 +60,36 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+}
+
+/* Nav section */
+
+.main-header {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+}
+
+#logo {
+  flex: 1 1 20rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
 }
