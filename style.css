@@ -115,6 +115,7 @@ nav {
 
 .hero-introduction p {
   padding: 5rem 10rem;
+  color: var(--gray-text);
 }
 
 .hero-introduction h2 {
@@ -198,6 +199,10 @@ nav {
     left: 0;
   }
 
+  .nav-links.active + .burger span {
+    background: white;
+  }
+
   .nav-links a {
     color: white;
     text-decoration: underline;
@@ -212,5 +217,14 @@ nav {
     background: var(--gray-text);
     margin: 0.5rem 0rem;
     display: block;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero-introduction p {
+    padding: 5rem 2rem;
+  }
+  .plant {
+    height: 80%;
   }
 }
