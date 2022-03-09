@@ -93,3 +93,42 @@ nav {
   justify-content: space-around;
   flex: 1 1 20rem;
 }
+
+/* hero section */
+
+.hero {
+  min-height: 90vh;
+  width: 95%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-introduction {
+  text-align: center;
+  flex: 3 1 40rem;
+}
+
+.hero-introduction p {
+  padding: 5rem 10rem;
+}
+
+.hero-introduction h2 {
+  padding-top: 3rem;
+}
+
+.hero-introduction a {
+  padding: 2rem 8rem;
+  border: 3px solid black;
+  margin-bottom: 4rem;
+}
+
+.hero-images {
+  flex: 1 1 40rem;
+}
+
+.hero-melanie {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
