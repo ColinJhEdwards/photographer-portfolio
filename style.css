@@ -105,6 +105,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  animation: fade 1.5s ease;
 }
 
 .hero-introduction {
@@ -124,6 +125,11 @@ nav {
   padding: 2rem 8rem;
   border: 3px solid black;
   margin-bottom: 4rem;
+  transition: all ease 0.5s;
+}
+
+.hero-introduction a:hover {
+  background: #dad8dd;
 }
 
 .hero-images {
@@ -144,8 +150,31 @@ nav {
   bottom: 0;
   left: -20%;
   z-index: -1;
+  transform: translateY(10%) rotateX(-90deg);
+  animation: plant-entrance 1.5s ease forwards 0.5s;
+  transform-origin: bottom;
 }
 
 .plant2 {
   left: 40%;
+}
+
+/* animations */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes plant-entrance {
+  from {
+    transform: translateY(10%) rotateX(-90deg);
+  }
+  to {
+    transform: translateY(0%) rotateX(0);
+  }
 }
