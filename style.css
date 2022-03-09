@@ -160,6 +160,52 @@ nav {
   left: 40%;
 }
 
+/* About Section*/
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about-image h5 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  letter-spacing: 2rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-text {
+  color: white;
+  background: var(--main-color);
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+
+.about-text div {
+  padding: 3rem 8rem;
+}
+
+.about-text h3 {
+  padding: 2rem 0rem;
+}
+
+.about-text h2 {
+  padding: 2rem 0rem;
+  font-family: "Great Vibes", cursive;
+}
+
 /* animations */
 
 @keyframes fade {
@@ -183,6 +229,7 @@ nav {
 /* media queries */
 
 @media screen and (max-width: 842px) {
+  /* Nav bar */
   .nav-links {
     background: var(--main-color);
     width: 100%;
@@ -218,6 +265,7 @@ nav {
     margin: 0.5rem 0rem;
     display: block;
   }
+  /* hero section */
   .hero {
     width: 100%;
   }
@@ -226,5 +274,9 @@ nav {
   }
   .plant {
     height: 80%;
+  }
+  /* About Section */
+  .about-text div {
+    padding: 3rem 3rem;
   }
 }
