@@ -298,6 +298,37 @@ nav {
   object-fit: cover;
 }
 
+/* footer section */
+
+footer {
+  background: var(--main-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+}
+
+.fa-brands {
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.fa-brands:hover {
+  text-shadow: 10px 10px 3px black;
+  color: var(--special-color);
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+}
+
 /* animations */
 
 @keyframes fade {
