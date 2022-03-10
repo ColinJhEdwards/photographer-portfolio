@@ -201,6 +201,10 @@ nav {
   padding: 2rem 0rem;
 }
 
+.about-text p {
+  font-size: var(--text);
+}
+
 .about-text h2 {
   padding: 2rem 0rem;
   font-family: "Great Vibes", cursive;
