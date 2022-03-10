@@ -163,7 +163,7 @@ nav {
 /* About Section*/
 
 .about {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -213,7 +213,7 @@ nav {
 
 .gallery {
   display: grid;
-  min-height: 100vh;
+  min-height: 90vh;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
 }
@@ -259,12 +259,12 @@ nav {
 }
 
 .form-wrapper h2 {
-  font-size: var(--big);
-  margin-bottom: 5rem;
+  margin: 5rem 0rem;
 }
 
 .form-wrapper span {
   color: var(--special-color);
+  font-size: var(--big);
 }
 
 .form-wrapper label {
@@ -306,6 +306,7 @@ footer {
   display: flex;
   padding: 3rem 5%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 footer ul {
@@ -326,7 +327,9 @@ footer ul {
 }
 
 footer h4 {
+  text-align: center;
   flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
 }
 
 /* animations */
@@ -416,5 +419,13 @@ footer h4 {
 
   .gallery-head {
     display: none;
+  }
+
+  .contact img {
+    display: none;
+  }
+
+  footer h4 {
+    margin-bottom: 2rem;
   }
 }
